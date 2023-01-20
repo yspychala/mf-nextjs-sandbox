@@ -21,7 +21,7 @@ describe("Home page", () => {
     });
 
     const heading = screen.getByRole("heading", {
-      name: /Host - index Page/i,
+      name: /Home - index Page/i,
     });
 
     expect(heading).toBeInTheDocument();

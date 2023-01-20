@@ -1,9 +1,9 @@
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import myFn from "host/myFn";
+import myFn from "home/myFn";
 import { useTheme } from "styled-components";
 
-const Header = dynamic(() => import("host/Header"));
+const Header = dynamic(() => import("home/Header"));
 
 const Page = ({ title, linkTo, store }) => {
   const theme = useTheme();

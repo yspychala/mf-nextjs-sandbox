@@ -1,4 +1,4 @@
 {
-  "host/myFn": "../host/myFunction.js",
-  "host/Header": "../host/components/Header.tsx"
+  "home/myFn": "../home/myFunction.js",
+  "home/Header": "../home/components/Header.tsx"
 }

@@ -6,7 +6,7 @@ const { NextFederationPlugin } = require("@module-federation/nextjs-mf");
 const remotes = (isServer) => {
   const location = isServer ? "ssr" : "chunks";
   return {
-    // host: `host@http://localhost:3000/_next/static/${location}/remoteEntry.js`,
+    // main: `main@http://localhost:3000/_next/static/${location}/remoteEntry.js`,
     messaging: `messaging@http://localhost:3001/_next/static/${location}/remoteEntry.js`,
     store: `store@http://localhost:3002/_next/static/${location}/remoteEntry.js`,
   };
@@ -35,7 +35,7 @@ module.exports = {
 
     config.plugins.push(
       new NextFederationPlugin({
-        name: "host",
+        name: "home",
         filename: "static/chunks/remoteEntry.js",
         exposes: {
           "./Header": "./components/Header.tsx",

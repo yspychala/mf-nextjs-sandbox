@@ -1,5 +1,5 @@
 {
-  "name": "host",
+  "name": "home",
   "private": true,
   "scripts": {
     "dev": "rm -rf .next && PORT=3000 next",

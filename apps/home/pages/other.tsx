@@ -1,7 +1,7 @@
 import Page from "../components/Page";
 
 const Other = () => {
-  return <Page title="Host - other Page" linkTo="/" />;
+  return <Page title="Home - other Page" linkTo="/" />;
 };
 
 export default Other;
