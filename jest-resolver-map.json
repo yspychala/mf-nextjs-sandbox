@@ -1,0 +1,4 @@
+{
+  "host/myFn": "../host/myFunction.js",
+  "host/Header": "../host/components/Header.tsx"
+}

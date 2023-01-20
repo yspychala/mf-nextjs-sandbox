@@ -1,0 +1,10 @@
+{
+  "name": "messaging",
+  "private": true,
+  "scripts": {
+    "dev": "rm -rf .next && PORT=3001 next",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest --watch"
+  }
+}

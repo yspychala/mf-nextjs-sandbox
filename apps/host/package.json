@@ -1,0 +1,10 @@
+{
+  "name": "host",
+  "private": true,
+  "scripts": {
+    "dev": "rm -rf .next && PORT=3000 next",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest --watch"
+  }
+}
