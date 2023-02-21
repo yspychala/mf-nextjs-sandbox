@@ -3,8 +3,9 @@
   "private": true,
   "version": "1.0.0",
   "description": "Next.js example with Module Federation and CSS Modules renderered server-side with On-Demand ISR",
-  "scripts": {},
-  "author": "yohan.spychala@adevinta.com",
+  "scripts": {
+    "dev:all": "nx run-many --target=dev"
+  },
   "license": "ISC",
   "workspaces": [
     "apps/*",
