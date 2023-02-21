@@ -1,0 +1,15 @@
+{
+  "name": "@with-css-modules-ssr-isr/host",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001 -H host",
+    "build": "next build",
+    "start": "NODE_ENV=production next start -p 3001 -H host"
+  },
+  "dependencies": {
+    "@module-federation/nextjs-mf": "6.0.7",
+    "next": "^13.1.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}

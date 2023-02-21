@@ -1,9 +1,0 @@
-{
-  "name": "store",
-  "private": true,
-  "scripts": {
-    "dev": "rm -rf .next && PORT=3002 next",
-    "build": "next build",
-    "start": "next start"
-  }
-}

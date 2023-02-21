@@ -1,0 +1,29 @@
+{
+  "name": "@with-css-modules-ssr-isr/app-shell",
+  "private": true,
+  "scripts": {
+    "predev": "npm run build:npm",
+    "dev": "next dev -p 3000 -H app-shell",
+    "prebuild": "npm run build:npm",
+    "build": "next build",
+    "build:npm": "babel --config-file ./npm.babelrc --copy-files --extensions \".tsx\" --out-dir build ./components",
+    "start": "concurrently \"NODE_ENV=production next start -p 3000 -H app-shell\" \"npm run invalidate\"",
+    "invalidate": "wait-on tcp:3000 && curl 'http://host:3001/api/revalidate?secret=module_federation_is_awesome'"
+  },
+  "dependencies": {
+    "@module-federation/nextjs-mf": "6.0.7",
+    "next": "12.2.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "browserslist": [
+    "cover 90% in FR",
+    "last 3 versions",
+    "not dead",
+    "maintained node versions"
+  ],
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "wait-on": "^7.0.1"
+  }
+}
